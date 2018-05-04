@@ -67,11 +67,11 @@ export default new Router({
     },
     //图片路由
     {
-      path:'/pic',
+      path:'/pics',
       component:PicsList,
     },
     {
-      path:'/pic/detail',
+      path:'/pics/detail',
       component:PicDetail,
     },
   ],

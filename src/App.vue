@@ -31,7 +31,6 @@
 			</router-link>
 		</nav>
 
-
   </div>
 </template>
 
@@ -42,5 +41,19 @@ export default {
 </script>
 
 <style>
-
+body {
+  padding: 40px 0 50px;
+}
+.mint-header{
+  position:fixed;
+  top:0px;
+  width: 100%;
+  z-index: 999;
+}
+.alldetail{
+  padding: 0 8px;
+}
+.alldetail img {
+  width: 100%;
+}
 </style>
