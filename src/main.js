@@ -6,6 +6,17 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+//引入公共模块
+
+// 1.用到的mint-ui
+import MintUi from 'mint-ui';
+import 'mint-ui/lib/style.css';
+Vue.use(MintUi);
+
+//2.用到的mui
+import './assets/mui/css/mui.css';
+import './assets/mui/css/icons-extra.css'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
