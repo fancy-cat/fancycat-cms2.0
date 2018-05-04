@@ -7,11 +7,14 @@
     </p>
     <hr>
     <div v-html="newsDatail.content"></div>
+    <comment :artid='$route.params.id'></comment>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+
+import comment from '../common/comment';
 
 export default {
   data(){
@@ -25,10 +28,13 @@ export default {
     }).then(res=>{
       if(res.data.status==0){
         this.newsDatail = res.data.message[0];
-        console.log(this.newsDatail)
       }
     })
+  },
+  components:{
+    comment
   }
+  
 }
 </script>
 
