@@ -13,6 +13,7 @@
 <script>
 
 import axios from 'axios';
+import '../../assets/mui/css/mui.css';
 
 export default {
   data(){
