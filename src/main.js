@@ -13,6 +13,10 @@ import MintUi from 'mint-ui';
 import 'mint-ui/lib/style.css';
 Vue.use(MintUi);
 
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
+
 //2.用到的mui
 import './assets/mui/css/mui.css';
 import './assets/mui/css/icons-extra.css'

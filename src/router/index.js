@@ -14,6 +14,7 @@ import NewsDetail from '@/components/news/detail'
 //图片分享组件
 import PicsList from '@/components/pictures/list'
 import PicDetail from '@/components/pictures/detail'
+import PicPreview from '@/components/pictures/preview'
 
 //底部导航组件
 import Home from '@/components/tabbar/home'
@@ -71,8 +72,12 @@ export default new Router({
       component:PicsList,
     },
     {
-      path:'/pics/detail',
+      path:'/pics/detail/:id',
       component:PicDetail,
+    },
+    {
+      path:'/pics/detail/preview/:id',
+      component:PicPreview,
     },
   ],
   linkActiveClass:'mui-active'
